@@ -1,0 +1,69 @@
+{
+  "name": "ohlay-smart-contracts",
+  "version": "1.0.0",
+  "description": "Ohlay Smart Contracts",
+  "main": "truffle-config.js",
+  "files": [
+    "contracts",
+    "test"
+  ],
+  "scripts": {
+    "dev": "lite-server",
+    "compile": "scripts/compile.sh",
+    "console": "truffle develop",
+    "coverage": "npm run compile && scripts/coverage.sh",
+    "test": "npm run compile && scripts/test.sh",
+    "buidler:compile": "buidler compile",
+    "buidler:console": "buidler console",
+    "buidler:coverage": "npm run buidler:compile && USE_BUIDLER=true scripts/coverage.sh",
+    "buidler:test": "buidler test",
+    "clean": "rm -rf coverage",
+    "profile": "npm run clean && npm run coverage && open coverage/index.html",
+    "analyze": "scripts/analyze.sh",
+    "lint": "npm run lint:js && npm run lint:sol",
+    "lint:fix": "npm run lint:js:fix",
+    "lint:js": "eslint .",
+    "lint:js:fix": "eslint . --fix",
+    "lint:sol": "solhint --max-warnings 0 \"contracts/**/*.sol\"",
+    "flat": "scripts/flat.sh"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "smart",
+    "contracts",
+    "token",
+    "erc20",
+    "ico",
+    "crowdsale"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/buidler": "^1.4.8",
+    "@nomiclabs/buidler-ganache": "^1.3.3",
+    "@nomiclabs/buidler-truffle5": "^1.3.4",
+    "@nomiclabs/buidler-web3": "^1.3.4",
+    "@openzeppelin/test-helpers": "^0.5.7",
+    "chai": "^4.2.0",
+    "coveralls": "^3.1.0",
+    "eslint": "^7.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-mocha-no-only": "^1.1.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "ganache-cli": "^6.12.0",
+    "lite-server": "^2.5.4",
+    "sol2uml": "^1.1.18",
+    "solhint": "^3.2.2",
+    "solidity-coverage": "^0.7.11",
+    "surya": "^0.4.1",
+    "truffle": "^5.1.49",
+    "truffle-flattener": "^1.5.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "3.2.0-solc-0.7",
+    "eth-token-recover": "3.2.0"
+  }
+}
