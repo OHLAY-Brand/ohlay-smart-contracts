@@ -1,7 +1,7 @@
 # Ohlay Smart Contracts
 
-[![Build Status](https://travis-ci.com/OHLAY-Brand/ohlay-smart-contracts.svg?branch=main)](https://travis-ci.com/OHLAY-Brand/ohlay-smart-contracts)
-[![Coverage Status](https://coveralls.io/repos/github/OHLAY-Brand/ohlay-smart-contracts/badge.svg?branch=main)](https://coveralls.io/github/OHLAY-Brand/ohlay-smart-contracts?branch=main)
+[![Build Status](https://travis-ci.com/OHLAY-Brand/ohlay-smart-contracts.svg?branch=master)](https://travis-ci.com/OHLAY-Brand/ohlay-smart-contracts)
+[![Coverage Status](https://coveralls.io/repos/github/OHLAY-Brand/ohlay-smart-contracts/badge.svg?branch=master)](https://coveralls.io/github/OHLAY-Brand/ohlay-smart-contracts?branch=master)
 [![MIT licensed](https://img.shields.io/github/license/OHLAY-Brand/ohlay-smart-contracts.svg)](https://github.com/OHLAY-Brand/ohlay-smart-contracts/blob/master/LICENSE)
 
 Smart Contracts for Ohlay Token and Crowdsale
